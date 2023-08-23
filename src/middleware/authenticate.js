@@ -10,6 +10,7 @@ module.exports = (req, res, next) => {
 
   // Acessing the actual JWT token:
   const authToken = token.split(" ")[1];
+  console.log(authToken);
 
   // verifying the token:
   try{

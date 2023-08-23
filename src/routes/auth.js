@@ -1,4 +1,4 @@
-const router = require("express").router();
+const router = require("express").Router();
 const knex = require("knex")(require("../../knexfile"));
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -8,7 +8,7 @@ router.post("/register", async (req, res) => {
   const { first_name, last_name, email, password } = req.body;
 
   //   hashing the password
-  const hashedPassword = await bcrypt.hash(password);
+  const hashedPassword = await bcrypt.hash(password,10);
 
   // creating the user
   const newUser = {
@@ -20,7 +20,7 @@ router.post("/register", async (req, res) => {
 
   // insert the users data into the database:
   try {
-    await knex("users".insert)(newUser);
+    await knex("users").insert(newUser);
     res.status(201).send("registered Successfully");
   } catch (error) {
     console.error(error);
