@@ -5,3 +5,4 @@ const cors = require("cors");
 
 const authRoutes = require("./routes/auth");
 const profileRoutes = require("./routes/profile")
+
