@@ -282,7 +282,7 @@ exports.seed = async function (knex) {
       course: randomizer(courses),
       hobbies: randomizer(hobbies),
       university: randomizer(ukUniversities),
-      url: fakeUsers[0],
+      url: fakeUsers[71],
     },
     {
       id: 2,
@@ -295,7 +295,7 @@ exports.seed = async function (knex) {
       course: randomizer(courses),
       hobbies: randomizer(hobbies),
       university: randomizer(ukUniversities),
-      url: fakeUsers[1],
+      url: fakeUsers[72],
     },
     {
       id: 3,
