@@ -10,13 +10,15 @@
     "seed": "npx knex seed:run",
     "migrate:down": "npx knex migrate:down",
     "migrate:rollback": "npx knex migrate:rollback",
-    "reset":"npx knex migrate:rollback && npx knex migrate:latest"
+    "reset": "npx knex migrate:rollback && npx knex migrate:latest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.0.2",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "chance": "^1.1.11",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
