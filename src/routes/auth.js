@@ -5,7 +5,16 @@ const jwt = require("jsonwebtoken");
 
 // need to create a route that handles user registration
 router.post("/register", async (req, res) => {
-  const { first_name, last_name, email, password } = req.body;
+  const { first_name, last_name,phone, email, password } = req.body;
+
+
+
+  // checking if theres existing email and phone number in the databse already
+  const existingEmail = await knex ("users").where({email}).first();
+  const existingPhoneNumber = await knex ("users").where({phone}).first();
+  if(existingEmail || existingPhoneNumber){
+    return res.status(400).json({message:"Email already registered"})
+  }
 
   //   hashing the password
   const hashedPassword = await bcrypt.hash(password,10);
@@ -14,8 +23,13 @@ router.post("/register", async (req, res) => {
   const newUser = {
     first_name,
     last_name,
+    phone,
     email,
     password: hashedPassword,
+    course:"N/A",
+    hobbies:"N/a",
+    university:"N/a",
+    url:"n/a"
   };
 
   // insert the users data into the database:
@@ -26,6 +40,7 @@ router.post("/register", async (req, res) => {
     console.error(error);
     res.status(401).send("Failed registration");
   }
+
 });
 
 // creating post for user login:

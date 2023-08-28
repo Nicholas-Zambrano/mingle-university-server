@@ -272,7 +272,7 @@ exports.seed = async function (knex) {
 
   await knex("users").insert([
     {
-      id: 1,
+      // id: 1,
       first_name: firstNames[0],
       last_name: lastNames[0],
       address: "fake address 1",
@@ -285,7 +285,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[71],
     },
     {
-      id: 2,
+      // id: 2,
       first_name: firstNames[1],
       last_name: lastNames[1],
       address: "fake address 2",
@@ -298,7 +298,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[72],
     },
     {
-      id: 3,
+      // id: 3,
       first_name: firstNames[2],
       last_name: lastNames[2],
       address: "fake address 3",
@@ -311,7 +311,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[2],
     },
     {
-      id: 4,
+      // id: 4,
       first_name: firstNames[3],
       last_name: lastNames[3],
       address: "fake address 4",
@@ -324,7 +324,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[3],
     }, 
     {
-      id: 5,
+      // id: 5,
       first_name: firstNames[4],
       last_name: lastNames[4],
       address: "fake address 5",
@@ -337,7 +337,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[4],
     },
     {
-      id: 6,
+      // id: 6,
       first_name: firstNames[5],
       last_name: lastNames[5],
       address: "fake address 6",
@@ -350,7 +350,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[5],
     },
     {
-      id: 7,
+      // id: 7,
       first_name: firstNames[6],
       last_name: lastNames[6],
       address: "fake address 7",
@@ -363,7 +363,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[6],
     },
     {
-      id: 8,
+      // id: 8,
       first_name: firstNames[7],
       last_name: lastNames[7],
       address: "fake address 8",
@@ -376,7 +376,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[7],
     },
     {
-      id: 9,
+      // id: 9,
       first_name: firstNames[8],
       last_name: lastNames[8],
       address: "fake address 9",
@@ -389,7 +389,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[8],
     },
     {
-      id: 10,
+      // id: 10,
       first_name: firstNames[9],
       last_name: lastNames[9],
       address: "fake address 10",
@@ -402,7 +402,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[9],
     },
     {
-      id: 11,
+      // id: 11,
       first_name: firstNames[10],
       last_name: lastNames[10],
       address: "fake address 11",
@@ -415,7 +415,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[10],
     },
     {
-      id: 12,
+      // id: 12,
       first_name: firstNames[11],
       last_name: lastNames[11],
       address: "fake address 12",
@@ -428,7 +428,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[11],
     },
     {
-      id: 13,
+      // id: 13,
       first_name: firstNames[12],
       last_name: lastNames[12],
       address: "fake address 13",
@@ -441,7 +441,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[12],
     },
     {
-      id: 14,
+      // id: 14,
       first_name: firstNames[13],
       last_name: lastNames[13],
       address: "fake address 14",
@@ -454,7 +454,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[13],
     },
     {
-      id: 15,
+      // id: 15,
       first_name: firstNames[14],
       last_name: lastNames[14],
       address: "fake address 15",
@@ -467,7 +467,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[14],
     },
     {
-      id: 16,
+      // id: 16,
       first_name: firstNames[15],
       last_name: lastNames[15],
       address: "fake address 16",
@@ -480,7 +480,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[15],
     },
     {
-      id: 17,
+      // id: 17,
       first_name: firstNames[16],
       last_name: lastNames[16],
       address: "fake address 17",
@@ -493,7 +493,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[16],
     },
     {
-      id: 18,
+      // id: 18,
       first_name: firstNames[17],
       last_name: lastNames[17],
       address: "fake address 18",
@@ -506,7 +506,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[17],
     },
     {
-      id: 19,
+      // id: 19,
       first_name: firstNames[18],
       last_name: lastNames[18],
       address: "fake address 19",
@@ -519,7 +519,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[18],
     },
     {
-      id: 20,
+      // id: 20,
       first_name: firstNames[19],
       last_name: lastNames[19],
       address: "fake address 20",
@@ -532,7 +532,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[19],
     },
     {
-      id: 21,
+      // id: 21,
       first_name: firstNames[20],
       last_name: lastNames[20],
       address: "fake address 21",
@@ -545,7 +545,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[20],
     },
     {
-      id: 22,
+      // id: 22,
       first_name: firstNames[21],
       last_name: lastNames[21],
       address: "fake address 22",
@@ -558,7 +558,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[21],
     },
     {
-      id: 23,
+      // id: 23,
       first_name: firstNames[22],
       last_name: lastNames[22],
       address: "fake address 23",
@@ -571,7 +571,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[22],
     },
     {
-      id: 24,
+      // id: 24,
       first_name: firstNames[23],
       last_name: lastNames[23],
       address: "fake address 24",
@@ -584,7 +584,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[23],
     },
     {
-      id: 25,
+      // id: 25,
       first_name: firstNames[24],
       last_name: lastNames[24],
       address: "fake address 25",
@@ -597,7 +597,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[24],
     },
     {
-      id: 26,
+      // id: 26,
       first_name: firstNames[25],
       last_name: lastNames[25],
       address: "fake address 26",
@@ -610,7 +610,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[25],
     },
     {
-      id: 27,
+      // id: 27,
       first_name: firstNames[26],
       last_name: lastNames[26],
       address: "fake address 27",
@@ -623,7 +623,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[26],
     },
     {
-      id: 28,
+      // id: 28,
       first_name: firstNames[27],
       last_name: lastNames[27],
       address: "fake address 28",
@@ -636,7 +636,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[27],
     },
     {
-      id: 29,
+      // id: 29,
       first_name: firstNames[28],
       last_name: lastNames[28],
       address: "fake address 29",
@@ -649,7 +649,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[28],
     },
     {
-      id: 30,
+      // id: 30,
       first_name: firstNames[29],
       last_name: lastNames[29],
       address: "fake address 30",
@@ -662,7 +662,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[29],
     },
     {
-      id: 31,
+      // id: 31,
       first_name: firstNames[30],
       last_name: lastNames[30],
       address: "fake address 31",
@@ -675,7 +675,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[30],
     },
     {
-      id: 32,
+      // id: 32,
       first_name: firstNames[31],
       last_name: lastNames[31],
       address: "fake address 32",
@@ -688,7 +688,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[31],
     },
     {
-      id: 33,
+      // id: 33,
       first_name: firstNames[32],
       last_name: lastNames[32],
       address: "fake address 33",
@@ -701,7 +701,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[32],
     },
     {
-      id: 34,
+      // id: 34,
       first_name: firstNames[33],
       last_name: lastNames[33],
       address: "fake address 34",
@@ -714,7 +714,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[33],
     },
     {
-      id: 35,
+      // id: 35,
       first_name: firstNames[34],
       last_name: lastNames[34],
       address: "fake address 35",
@@ -727,7 +727,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[34],
     },
     {
-      id: 36,
+      // id: 36,
       first_name: firstNames[35],
       last_name: lastNames[35],
       address: "fake address 36",
@@ -740,7 +740,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[35],
     },
     {
-      id: 37,
+      // id: 37,
       first_name: firstNames[36],
       last_name: lastNames[36],
       address: "fake address 37",
@@ -753,7 +753,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[36],
     },
     {
-      id: 38,
+      // id: 38,
       first_name: firstNames[37],
       last_name: lastNames[37],
       address: "fake address 38",
@@ -766,7 +766,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[37],
     },
     {
-      id: 39,
+      // id: 39,
       first_name: firstNames[38],
       last_name: lastNames[38],
       address: "fake address 39",
@@ -779,7 +779,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[38],
     },
     {
-      id: 40,
+      // id: 40,
       first_name: firstNames[39],
       last_name: lastNames[39],
       address: "fake address 40",
@@ -792,7 +792,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[39],
     },
     {
-      id: 41,
+      // id: 41,
       first_name: firstNames[40],
       last_name: lastNames[40],
       address: "fake address 41",
@@ -805,7 +805,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[40],
     },
     {
-      id: 42,
+      // id: 42,
       first_name: firstNames[41],
       last_name: lastNames[41],
       address: "fake address 42",
@@ -818,7 +818,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[41],
     },
     {
-      id: 43,
+      // id: 43,
       first_name: firstNames[42],
       last_name: lastNames[42],
       address: "fake address 43",
@@ -831,7 +831,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[42],
     },
     {
-      id: 44,
+      // id: 44,
       first_name: firstNames[43],
       last_name: lastNames[43],
       address: "fake address 44",
@@ -844,7 +844,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[43],
     },
     {
-      id: 45,
+      // id: 45,
       first_name: firstNames[44],
       last_name: lastNames[44],
       address: "fake address 45",
@@ -857,7 +857,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[44],
     },
     {
-      id: 46,
+      // id: 46,
       first_name: firstNames[45],
       last_name: lastNames[45],
       address: "fake address 46",
@@ -870,7 +870,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[45],
     },
     {
-      id: 47,
+      // id: 47,
       first_name: firstNames[46],
       last_name: lastNames[46],
       address: "fake address 47",
@@ -883,7 +883,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[46],
     },
     {
-      id: 48,
+      // id: 48,
       first_name: firstNames[47],
       last_name: lastNames[47],
       address: "fake address 48",
@@ -896,7 +896,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[47],
     },
     {
-      id: 49,
+      // id: 49,
       first_name: firstNames[48],
       last_name: lastNames[48],
       address: "fake address 49",
@@ -909,7 +909,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[48],
     },
     {
-      id: 50,
+      // id: 50,
       first_name: firstNames[49],
       last_name: lastNames[49],
       address: "fake address 50",
@@ -922,7 +922,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[49],
     },
     {
-      id: 51,
+      // id: 51,
       first_name: firstNames[50],
       last_name: lastNames[50],
       address: "fake address 51",
@@ -935,7 +935,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[50],
     },
     {
-      id: 52,
+      // id: 52,
       first_name: firstNames[51],
       last_name: lastNames[51],
       address: "fake address 52",
@@ -948,7 +948,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[51],
     },
     {
-      id: 53,
+      // id: 53,
       first_name: firstNames[52],
       last_name: lastNames[52],
       address: "fake address 53",
@@ -961,7 +961,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[52],
     },
     {
-      id: 54,
+      // id: 54,
       first_name: firstNames[53],
       last_name: lastNames[53],
       address: "fake address 54",
@@ -974,7 +974,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[53],
     },
     {
-      id: 55,
+      // id: 55,
       first_name: firstNames[54],
       last_name: lastNames[54],
       address: "fake address 55",
@@ -987,7 +987,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[54],
     },
     {
-      id: 56,
+      // id: 56,
       first_name: firstNames[55],
       last_name: lastNames[55],
       address: "fake address 56",
@@ -1000,7 +1000,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[55],
     },
     {
-      id: 57,
+      // id: 57,
       first_name: firstNames[56],
       last_name: lastNames[56],
       address: "fake address 57",
@@ -1013,7 +1013,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[56],
     },
     {
-      id: 58,
+      // id: 58,
       first_name: firstNames[57],
       last_name: lastNames[57],
       address: "fake address 58",
@@ -1026,7 +1026,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[57],
     },
     {
-      id: 59,
+      // id: 59,
       first_name: firstNames[58],
       last_name: lastNames[58],
       address: "fake address 59",
@@ -1039,7 +1039,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[58],
     },
     {
-      id: 60,
+      // id: 60,
       first_name: firstNames[59],
       last_name: lastNames[59],
       address: "fake address 60",
@@ -1052,7 +1052,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[59],
     },
     {
-      id: 61,
+      // id: 61,
       first_name: firstNames[60],
       last_name: lastNames[60],
       address: "fake address 61",
@@ -1065,7 +1065,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[60],
     },
     {
-      id: 62,
+      // id: 62,
       first_name: firstNames[61],
       last_name: lastNames[61],
       address: "fake address 62",
@@ -1078,7 +1078,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[61],
     },
     {
-      id: 63,
+      // id: 63,
       first_name: firstNames[62],
       last_name: lastNames[62],
       address: "fake address 63",
@@ -1091,7 +1091,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[62],
     },
     {
-      id: 64,
+      // id: 64,
       first_name: firstNames[63],
       last_name: lastNames[63],
       address: "fake address 64",
@@ -1104,7 +1104,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[63],
     },
     {
-      id: 65,
+      // id: 65,
       first_name: firstNames[64],
       last_name: lastNames[64],
       address: "fake address 65",
@@ -1117,7 +1117,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[64],
     },
     {
-      id: 66,
+      // id: 66,
       first_name: firstNames[65],
       last_name: lastNames[65],
       address: "fake address 66",
@@ -1130,7 +1130,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[67],
     },
     {
-      id: 67,
+      // id: 67,
       first_name: firstNames[66],
       last_name: lastNames[66],
       address: "fake address 67",
@@ -1143,7 +1143,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[66],
     },
     {
-      id: 68,
+      // id: 68,
       first_name: firstNames[67],
       last_name: lastNames[67],
       address: "fake address 68",
@@ -1156,7 +1156,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[67],
     },
     {
-      id: 69,
+      // id: 69,
       first_name: firstNames[68],
       last_name: lastNames[68],
       address: "fake address 69",
@@ -1169,7 +1169,7 @@ exports.seed = async function (knex) {
       url: fakeUsers[68],
     },
     {
-      id: 70,
+      // id: 70,
       first_name: firstNames[69],
       last_name: lastNames[69],
       address: "fake address 70",
