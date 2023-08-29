@@ -1,10 +1,13 @@
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
 const knex = require("knex")(require("../../knexfile"));
+const authenticate = require("../middleware/authenticate")
 
 // getting information about the logged in user
 
-router.get("/user", async (req, res) => {
+
+router.get("/",authenticate,async (req, res) => {
+
   // checking if the user is authenticated before accessing their user profile endpoint:
   if (!req.headers.authorization) {
     res.status(401).send("Please login");
@@ -20,7 +23,7 @@ router.get("/user", async (req, res) => {
     // before sending the user's data in the response
     // remove their password:
 
-    const user = await knex("users").where({ id: decodedToken.id });
+    const user = await knex("users").where({ id: decodedToken.id }).first();
     delete user.password;
     res.json(user);
   } catch (error) {

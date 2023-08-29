@@ -13,13 +13,13 @@ module.exports = (req, res, next) => {
   console.log(authToken);
 
   // verifying the token:
-  try{
-    const decoded = jwt.verify(authToken,process.env.JWT_KEY)
+  try {
+    const decoded = jwt.verify(authToken, process.env.JWT_KEY);
     // if verification successful the JWT token is assigned to the req.user
-    req.user = decoded
+    req.user = decoded;
     next();
-
-  }catch(error){
-    console.error(error)
+  } catch (error) {
+    console.error(error);
+    return res.status(401).send("Token verification failed");
   }
 };
