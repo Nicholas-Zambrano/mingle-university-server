@@ -20,7 +20,14 @@ router.post("/", authenticate, async (req, res) => {
       url:photo,
     });
 
+    // fetching users uni
+    // const updatedUser = await knex("users").where({id:userID}).first()
+    // const userUniversity = updatedUser.university
+
+
     res.status(200).send("Profile updated successfully");
+    // res.status(200).json({message:"profile updated successfully",university:userUniversity})
+
   } catch (error) {
     console.log(error);
     res.status(400).send("Unable to update profile");
