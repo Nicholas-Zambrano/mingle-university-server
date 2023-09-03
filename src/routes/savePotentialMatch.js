@@ -3,7 +3,7 @@ const router = express.Router();
 
 const temporaryPotentialMatches = [];
 
-router.post("/save", (req, res) => {
+router.post("/save", async(req, res) => {
   const potentialMatch= req.body;
 
   console.log(potentialMatch);
@@ -14,6 +14,8 @@ router.post("/save", (req, res) => {
 
 router.get("/get",(req,res)=>{
     res.status(200).json(temporaryPotentialMatches)
+    console.log("from the potential save page");
+    console.log(temporaryPotentialMatches);
 })
 
 module.exports = router;

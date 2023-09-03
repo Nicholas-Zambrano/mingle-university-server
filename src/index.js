@@ -8,6 +8,7 @@ const userRoutes = require("./routes/usersData");
 const updateProfileRoutes = require("./routes/updateProfile");
 const students = require("./routes/students");
 const savePotentialMatch = require("./routes/savePotentialMatch");
+const specificStudent = require("./routes/singleStudent");
 const PORT = process.env.PORT;
 
 // Middleware:
@@ -20,6 +21,7 @@ app.use("/users", userRoutes);
 app.use("/update-profile", updateProfileRoutes);
 app.use("/students", students);
 app.use("/potential-match", savePotentialMatch);
+app.use("/student", specificStudent);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
