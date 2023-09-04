@@ -5,7 +5,7 @@ const authenticate = require("../middleware/authenticate");
 
 router.post("/:id", authenticate, async (req, res) => {
   try {
-    const senderUserId = req.user.id; // getting the id of the authenticad user whos sending the friend request 
+    const senderUserId = req.user.id; // getting the id of the authenticad user whos sending the friend request
     const receiverUserId = req.params.id;
     const { comment } = req.body; // the comment the user sent
 
@@ -19,10 +19,18 @@ router.post("/:id", authenticate, async (req, res) => {
       return res.status(404).json({ error: "Sender or receiver not found" });
     }
 
+    // inserting the friend request to new friend request table
+    await knex("friend_requests").insert({
+      sender_id: senderUserId,
+      receiver_id: receiverUserId,
+      comment: comment,
+    });
     res.status(200).json({ message: "Friend request sent successfully" });
     console.log(senderUserId);
     console.log(receiverUserId);
     console.log(comment);
+
+
   } catch (error) {
     console.error(error);
     res.status(404).json({ error: "Failed to send friend request" });

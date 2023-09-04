@@ -10,6 +10,7 @@ const students = require("./routes/students");
 const savePotentialMatch = require("./routes/savePotentialMatch");
 const specificStudent = require("./routes/singleStudent");
 const friendRequest = require("./routes/friend-request");
+const acceptRequst = require("./routes/acceptRequest");
 const PORT = process.env.PORT;
 
 // Middleware:
@@ -24,6 +25,7 @@ app.use("/students", students);
 app.use("/potential-match", savePotentialMatch);
 app.use("/student", specificStudent);
 app.use("/send-friend-request", friendRequest);
+app.use("/auto-accept", acceptRequst);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
