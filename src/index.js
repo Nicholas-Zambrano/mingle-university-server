@@ -9,6 +9,7 @@ const updateProfileRoutes = require("./routes/updateProfile");
 const students = require("./routes/students");
 const savePotentialMatch = require("./routes/savePotentialMatch");
 const specificStudent = require("./routes/singleStudent");
+const friendRequest = require("./routes/friend-request");
 const PORT = process.env.PORT;
 
 // Middleware:
@@ -22,6 +23,7 @@ app.use("/update-profile", updateProfileRoutes);
 app.use("/students", students);
 app.use("/potential-match", savePotentialMatch);
 app.use("/student", specificStudent);
+app.use("/send-friend-request", friendRequest);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
