@@ -15,8 +15,27 @@ router.post("/:id", authenticate, async (req, res) => {
       .where("id", receiverUserId)
       .first();
 
+    // checking if there is already an existing request:
+    const existingRequest = await knex("friend_requests")
+      .where({
+        sender_id: senderUserId,
+        receiver_id: receiverUserId,
+      })
+      // checking if the fake user already sent a friend requests(good practice)
+      .orWhere({
+        sender_id: receiverUserId,
+        receiver_id: senderUserId,
+      });
+
     if (!senderExists || !receiverExists) {
       return res.status(404).json({ error: "Sender or receiver not found" });
+    }
+
+    // checking if there is already a friend request
+    if (existingRequest.length > 0) {
+      return res
+        .status(400)
+        .json({ error: "Friend request has already been sent" });
     }
 
     // inserting the friend request to new friend request table
@@ -29,8 +48,6 @@ router.post("/:id", authenticate, async (req, res) => {
     console.log(senderUserId);
     console.log(receiverUserId);
     console.log(comment);
-
-
   } catch (error) {
     console.error(error);
     res.status(404).json({ error: "Failed to send friend request" });
